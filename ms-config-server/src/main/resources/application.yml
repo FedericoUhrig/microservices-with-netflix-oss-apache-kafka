@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jpolivo/microservices-with-netflix-oss-apache-kafka/
+          search-paths:
+            - "ms-config-properties/{application}/{profile}"
