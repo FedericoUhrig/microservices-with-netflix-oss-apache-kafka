@@ -1,4 +1,8 @@
 spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    topic:
+      userCreated: USER_CREATED_TOPIC	
   h2:
     console:
       enabled: true
@@ -10,4 +14,6 @@ spring:
 security:
   basic:
     enabled: false
+
+
 
