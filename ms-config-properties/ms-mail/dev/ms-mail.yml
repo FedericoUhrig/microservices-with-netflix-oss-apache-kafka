@@ -1,0 +1,8 @@
+mail:
+    host: smtp.gmail.com
+    port: 587
+    username: televisor.televisor@gmail.com
+    password: televiso
+    properties.mail.smtp:
+      auth: true
+      starttls.enable: true
