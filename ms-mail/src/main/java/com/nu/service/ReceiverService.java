@@ -1,7 +1,7 @@
 package com.nu.service;
 
-import com.nu.dto.UserDTO;
+import com.nu.domain.User;
 
 public interface ReceiverService {
-	void receive(UserDTO payload);
+	void receive(User payload);
 }

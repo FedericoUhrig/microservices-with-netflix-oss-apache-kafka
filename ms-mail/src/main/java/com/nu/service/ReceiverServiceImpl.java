@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
-import com.nu.dto.UserDTO;
+import com.nu.domain.User;
 
 @Service
 public class ReceiverServiceImpl implements ReceiverService {
@@ -16,7 +16,7 @@ public class ReceiverServiceImpl implements ReceiverService {
 	
 	@KafkaListener(topics = "${spring.kafka.topic.userCreated}")
 	@Override
-	public void receive(UserDTO payload) {
+	public void receive(User payload) {
 		emailService.sendSimpleMessage(payload);
 		latch.countDown();
 	}

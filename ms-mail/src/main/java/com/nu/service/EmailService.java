@@ -1,7 +1,7 @@
 package com.nu.service;
 
-import com.nu.dto.UserDTO;
+import com.nu.domain.User;
 
 public interface EmailService {
-	void sendSimpleMessage(UserDTO input);
+	void sendSimpleMessage(User input);
 }

@@ -7,7 +7,7 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 import com.nu.domain.Mail;
-import com.nu.dto.UserDTO;
+import com.nu.domain.User;
 import com.nu.repository.MailRepository;
 
 @Service
@@ -19,7 +19,7 @@ public class EmailServiceImpl implements EmailService {
 	private MailRepository mailRepository;
 
 	@Override
-	public void sendSimpleMessage(UserDTO input) {
+	public void sendSimpleMessage(User input) {
 		try {
 
 			Mail newMail = new Mail();
