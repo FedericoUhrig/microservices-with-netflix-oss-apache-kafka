@@ -8,3 +8,4 @@ spring:
       discovery:
         enabled: true
         service-id: ms-config-server
+
